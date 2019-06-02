@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+    <script src="LivingCreature.js"></script>
+    <script src="Grass.js"></script>
+    <script src="Xotaker.js"></script>
+    <script src="Gishatich.js"></script>
+    <script src="Varak.js"></script>
+    <script src="Kerav.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <table id="legend">
+        <tr>
+            <td class="legend-color">Գույն</td>
+            <td>Անվանում</td>
+            <td>Շարժվում է</td>
+            <td>Ուտում է</td>
+            <td>Բազմանում է</td>
+            <td>Սատկում է</td>
+        </tr>
+
+        <tr>
+            <td class="legend-color" style="background-color:white"></td>
+            <td>Դատարկ վանդակներ</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="legend-color" style="background-color:green"></td>
+            <td>Խոտ</td>
+            <td></td>
+            <td></td>
+            <td>Մոտակա 8 վանդակներում, 4 տակտը մեկ</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="legend-color" style="background-color:yellow"></td>
+            <td>Խոտակեր</td>
+            <td>Մոտակա 8 վանդակներում, էներգիան քչանում է 1֊ով</td>
+            <td>Խոտերին, մոտակա 8 վանդակներում, շարժվելիս էներգիան ավելանում է 1֊ով</td>
+            <td>Բազմանում է մոտակա տարածքներում, երբ էներգիան 10֊ից ավել է</td>
+            <td>Սատկում է, երբ էներգիան փոքր է 0֊ից</td>
+        </tr>
+        <tr>
+            <td class="legend-color" style="background-color:black"></td>
+            <td>Գիշատիչ</td>
+            <td>Մոտակա 8 վանդակներում, էներգիան քչանում է 2֊ով</td>
+            <td>Խոտակերներին, մոտակա 8 վանդակներում, շարժվելիս էներգիան ավելանում է 2֊ով,քայլում է խոտերի վրայով երբ դատարկ
+                վանդակ չկա</td>
+            <td>Բազմանում է մոտակա տարածքներում, երբ էներգիան 15֊ից ավել է</td>
+            <td>Սատկում է, երբ էներգիան փոքր է 0֊ից</td>
+        </tr>
+        <tr>
+            <td class="legend-color" style="background-color:gray"></td>
+            <td>Վարաք</td>
+            <td>Մոտակա 8 վանդակներում, էներգիան քչանում է 2֊ով</td>
+            <td>Գիշատչին, մոտակա 8 վանդակներում, շարժվելիս էներգիան ավելանում է 2֊ով,քայլում է խոտերի վրայով երբ դատարկ վանդակ
+                չկա
+            </td>
+            <td>Բազմանում է մոտակա տարածքներում, երբ էներգիան 12֊ից ավել է</td>
+            <td>Սատկում է, երբ էներգիան փոքր է 0֊ից</td>
+        </tr>
+        <tr>
+            <td class="legend-color" style="background-color:red"></td>
+            <td>Կերավ</td>
+            <td>Մոտակա 24 վանդակներում, էներգիան քչանում է 2֊ով</td>
+            <td>Վարաքին, մոտակա 8 վանդակներում, շարժվելիս էներգիան ավելանում է 4֊ով,քայլում է խոտերի վրայով երբ դատարկ վանդակ
+                չկա
+            </td>
+            <td>Բազմանում է մոտակա տարածքներում, երբ էներգիան 13֊ից ավել է</td>
+            <td>Սատկում է, երբ էներգիան փոքր է 0֊ից</td>
+        </tr>
+    </table>
+</body>
+
+</html>
